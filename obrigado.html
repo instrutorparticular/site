@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Obrigado pela sua solicitação - Instrutor Particular">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Obrigado | Instrutor Particular</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+
+    <style>
+        /* ========================================
+           RESET
+        ======================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #FFFFFF;
+            color: #000000;
+            line-height: 1.6;
+        }
+
+        /* ========================================
+           CONTAINER
+        ======================================== */
+
+        .container {
+            width: 100%;
+            max-width: 1150px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        /* ========================================
+           HEADER
+        ======================================== */
+
+        .header {
+            background: #F0D84E;
+            padding: 35px 0 45px;
+            text-align: center;
+        }
+
+        .logo-area {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 22px;
+        }
+
+        /* ESPAÇO DA LOGO - 200px */
+
+        .logo-circle {
+            width: 200px;
+            height: 200px;
+
+            background: #FFFFFF;
+
+            border: 4px solid #000000;
+
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            overflow: hidden;
+
+            box-shadow: 5px 5px 0 #000000;
+        }
+
+        /* LOGO REAL */
+
+        .logo-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .brand h1 {
+            font-size: 30px;
+            font-weight: 900;
+            letter-spacing: -1px;
+        }
+
+        .brand h1 span {
+            display: block;
+        }
+
+        .brand p {
+            margin-top: 4px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        /* ========================================
+           CONTEÚDO PRINCIPAL
+        ======================================== */
+
+        .main {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .thank-you-card {
+            background: #FFFFFF;
+            border: 3px solid #000000;
+            border-radius: 20px;
+            padding: 50px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 10px 10px 0 #F0D84E;
+        }
+
+        .check-icon {
+            width: 80px;
+            height: 80px;
+            background: #F0D84E;
+            border: 3px solid #000000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 40px;
+            font-weight: 900;
+            color: #000000;
+        }
+
+        .thank-you-card h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+
+        .thank-you-card p {
+            color: #666666;
+            font-size: 17px;
+            margin-bottom: 30px;
+        }
+
+        .back-home {
+            display: inline-block;
+            color: #000000;
+            font-weight: 700;
+            text-decoration: none;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .back-home:hover {
+            text-decoration: underline;
+        }
+
+        /* ========================================
+           FOOTER
+        ======================================== */
+
+        .footer {
+            background: #000000;
+            color: #FFFFFF;
+            padding: 35px 0;
+        }
+
+        .footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .footer strong {
+            font-size: 16px;
+        }
+
+        .footer p {
+            color: #BBBBBB;
+            font-size: 12px;
+        }
+
+        .copyright {
+            text-align: right;
+        }
+
+        /* ========================================
+           RESPONSIVO
+        ======================================== */
+
+        @media (max-width: 650px) {
+
+            .header {
+                padding: 25px 0 35px;
+            }
+
+            .logo-circle {
+                width: 150px;
+                height: 150px;
+            }
+
+            .brand h1 {
+                font-size: 25px;
+            }
+
+            .main {
+                padding: 50px 0;
+            }
+
+            .thank-you-card {
+                padding: 30px 20px;
+                box-shadow: 6px 6px 0 #F0D84E;
+            }
+
+            .thank-you-card h2 {
+                font-size: 28px;
+            }
+
+            .footer .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .copyright {
+                text-align: center;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================================
+         TOPO
+    ================================= -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <!-- ÁREA DA LOGO -->
+
+            <div class="logo-area">
+
+                <div class="logo-circle">
+
+                    <!-- LOGO REAL -->
+
+                    <img src="logo.png" alt="Instrutor Particular">
+
+                </div>
+
+            </div>
+
+            <div class="brand">
+
+                <h1>
+                    INSTRUTOR
+                    <span>PARTICULAR</span>
+                </h1>
+
+                <p>
+                    Encontre um instrutor na sua região
+                </p>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================================
+         CONTEÚDO PRINCIPAL
+    ================================= -->
+
+    <main class="main">
+
+        <div class="container">
+
+            <div class="thank-you-card">
+
+                <div class="check-icon">
+                    ✓
+                </div>
+
+                <h2>
+                    Solicitação enviada!
+                </h2>
+
+                <p>
+                    Obrigado por entrar em contato.
+                    Em breve um instrutor entrará em
+                    contato com você pelo WhatsApp.
+                </p>
+
+                <a href="index.html" class="back-home">
+                    ← Voltar para o site
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- ================================
+         RODAPÉ
+    ================================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div>
+
+                <strong>
+                    INSTRUTOR PARTICULAR
+                </strong>
+
+                <p>
+                    Encontre instrutores na sua região.
+                </p>
+
+            </div>
+
+            <p class="copyright">
+                © 2026 Instrutor Particular.
+                Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
