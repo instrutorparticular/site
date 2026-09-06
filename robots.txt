@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Bloquear página de obrigado (não deve ser indexada)
+Disallow: /obrigado.html
+
+# Bloquear páginas de admin se existirem
+Disallow: /admin/
+Disallow: /cgi-bin/
+
+# Sitemap
+Sitemap: https://instrutorparticular.com.br/sitemap.xml

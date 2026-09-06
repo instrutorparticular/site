@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Política de Privacidade - Instrutor Particular">
+    <meta name="robots" content="index, follow">
+    <title>Política de Privacidade | Instrutor Particular</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+
+    <style>
+        /* ========================================
+           RESET
+        ======================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #FFFFFF;
+            color: #000000;
+            line-height: 1.8;
+        }
+
+        /* ========================================
+           CONTAINER
+        ======================================== */
+
+        .container {
+            width: 100%;
+            max-width: 950px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        /* ========================================
+           HEADER
+        ======================================== */
+
+        .header {
+            background: #F0D84E;
+            padding: 35px 0 45px;
+            text-align: center;
+            border-bottom: 3px solid #000000;
+        }
+
+        .logo-area {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 22px;
+        }
+
+        .logo-circle {
+            width: 150px;
+            height: 150px;
+            background: #FFFFFF;
+            border: 4px solid #000000;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            box-shadow: 5px 5px 0 #000000;
+        }
+
+        .logo-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .brand h1 {
+            font-size: 30px;
+            font-weight: 900;
+            letter-spacing: -1px;
+        }
+
+        .brand h1 span {
+            display: block;
+        }
+
+        .brand p {
+            margin-top: 4px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        /* ========================================
+           CONTEÚDO PRINCIPAL
+        ======================================== */
+
+        .main {
+            padding: 60px 0 80px;
+        }
+
+        .policy-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .policy-header h2 {
+            font-size: 38px;
+            letter-spacing: -1px;
+            margin-bottom: 10px;
+        }
+
+        .policy-header p {
+            color: #666666;
+            font-size: 14px;
+        }
+
+        /* ========================================
+           BLOCO DE CONTEÚDO
+        ======================================== */
+
+        .policy-section {
+            background: #FFFFFF;
+            border: 2px solid #000000;
+            border-radius: 15px;
+            padding: 35px;
+            margin-bottom: 25px;
+            box-shadow: 5px 5px 0 #F0D84E;
+        }
+
+        .policy-section h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #000000;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #F0D84E;
+            display: inline-block;
+        }
+
+        .policy-section p {
+            color: #333333;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        .policy-section ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .policy-section ul li {
+            margin-bottom: 8px;
+            color: #333333;
+            font-size: 15px;
+        }
+
+        .policy-section strong {
+            color: #000000;
+        }
+
+        .highlight-box {
+            background: #FFF9C4;
+            border-left: 4px solid #F0D84E;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+        }
+
+        /* ========================================
+           RODAPÉ
+        ======================================== */
+
+        .footer {
+            background: #000000;
+            color: #FFFFFF;
+            padding: 35px 0;
+        }
+
+        .footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .footer strong {
+            font-size: 16px;
+        }
+
+        .footer p {
+            color: #BBBBBB;
+            font-size: 12px;
+        }
+
+        .copyright {
+            text-align: right;
+        }
+
+        .footer a {
+            color: #F0D84E;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* ========================================
+           ÍCONE SOCIAL (TIKTOK)
+        ======================================== */
+
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border: 2px solid #F0D84E;
+            border-radius: 50%;
+            transition: 0.3s;
+            background: transparent;
+        }
+
+        .social-icon:hover {
+            background: #F0D84E;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(240, 216, 78, 0.3);
+        }
+
+        .social-icon:hover svg {
+            fill: #000000;
+        }
+
+        /* ========================================
+           RESPONSIVO
+        ======================================== */
+
+        @media (max-width: 650px) {
+            .header {
+                padding: 25px 0 35px;
+            }
+
+            .logo-circle {
+                width: 120px;
+                height: 120px;
+            }
+
+            .brand h1 {
+                font-size: 25px;
+            }
+
+            .main {
+                padding: 40px 0 60px;
+            }
+
+            .policy-header h2 {
+                font-size: 28px;
+            }
+
+            .policy-section {
+                padding: 25px 20px;
+                box-shadow: 4px 4px 0 #F0D84E;
+            }
+
+            .footer .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .copyright {
+                text-align: center;
+            }
+
+            .social-icon {
+                margin: 10px auto;
+            }
+        }
+    </style>
+	<!-- ========================================
+     OPEN GRAPH (REDES SOCIAIS)
+======================================== -->
+
+<meta property="og:title" content="Política de Privacidade | Instrutor Particular">
+<meta property="og:description" content="Conheça como coletamos, usamos e protegemos seus dados pessoais em conformidade com a LGPD.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://instrutorparticular.com.br/politica-de-privacidade.html">
+<meta property="og:image" content="https://instrutorparticular.com.br/logo.png">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Instrutor Particular">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Política de Privacidade | Instrutor Particular">
+<meta name="twitter:description" content="Conheça como coletamos, usamos e protegemos seus dados pessoais em conformidade com a LGPD.">
+<meta name="twitter:image" content="https://instrutorparticular.com.br/logo.png">
+</head>
+
+<body>
+
+    <!-- ================================
+         TOPO
+    ================================= -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <div class="logo-area">
+
+                <div class="logo-circle">
+
+                    <img src="logo.png" alt="Instrutor Particular">
+
+                </div>
+
+            </div>
+
+            <div class="brand">
+
+                <h1>
+                    INSTRUTOR
+                    <span>PARTICULAR</span>
+                </h1>
+
+                <p>
+                    Encontre um instrutor na sua região
+                </p>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================================
+         CONTEÚDO PRINCIPAL
+    ================================= -->
+
+    <main class="main">
+
+        <div class="container">
+
+            <!-- CABEÇALHO DA POLÍTICA -->
+
+            <div class="policy-header">
+
+                <h2>
+                    Política de Privacidade
+                </h2>
+
+                <p>
+                    Última atualização: Setembro de 2026
+                </p>
+
+            </div>
+
+
+            <!-- SEÇÃO 1 -->
+
+            <div class="policy-section">
+
+                <h3>
+                    1. Introdução
+                </h3>
+
+                <p>
+                    A <strong>Instrutor Particular</strong> ("nós", "nosso" ou "nossos")
+                    respeita a sua privacidade e está comprometida em proteger os dados
+                    pessoais que você nos fornece. Esta Política de Privacidade explica
+                    como coletamos, usamos, armazenamos e protegemos suas informações,
+                    em conformidade com a <strong>Lei Geral de Proteção de Dados Pessoais (LGPD)</strong>
+                    – Lei nº 13.709/2018.
+                </p>
+
+                <p>
+                    Ao utilizar nosso site e fornecer seus dados pessoais, você
+                    concorda com as práticas descritas nesta política.
+                </p>
+
+            </div>
+
+
+            <!-- SEÇÃO 2 -->
+
+            <div class="policy-section">
+
+                <h3>
+                    2. Dados que coletamos
+                </h3>
+
+                <p>
+                    Coletamos apenas os dados necessários para prestar nossos serviços
+                    e entrar em contato com você:
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Nome completo</strong> – para identificação do usuário;
+                    </li>
+                    <li>
+                        <strong>Número de WhatsApp</strong> – para contato referente à sua solicitação;
+                    </li>
+                    <li>
+                        <strong>Estado e Cidade</strong> – para localização e indicação de instrutores na sua região;
+                    </li>
+                    <li>
+                        <strong>Categoria de aula desejada</strong> – para direcionar sua solicitação ao instrutor adequado;
+                    </li>
+                    <li>
+                        <strong>Endereço de IP</strong> – para fins de segurança e estatísticas internas;
+                    </li>
+                    <li>
+                        <strong>Dados de navegação (cookies)</strong> – para melhorar sua experiência no site.
+                    </li>
+                </ul>
+
+                <p>
+                    <strong>Não coletamos</strong> dados sensíveis, como informações
+                    de saúde, dados bancários ou documentos pessoais (CPF, RG, etc.).
+                </p>
+
+            </div>
+
+
+            <!-- SEÇÃO 3 -->
+
+            <div class="policy-section">
+
+                <h3>
+                    3. Finalidade do uso dos dados
+                </h3>
+
+                <p>
+                    Utilizamos seus dados pessoais exclusivamente para:
+                </p>
+
+                <ul>
+                    <li>Entrar em contato com você para responder à sua solicitação;</li>
+                    <li>Indicar instrutores particulares na sua região;</li>
+                    <li>Melhorar nossos serviços e a experiência do usuário;</li>
+                    <li>Comunicações institucionais (apenas se você autorizar);</li>
+                    <li>Fins estatísticos internos (sempre de forma anônima).</li>
+                </ul>
+
+                <p>
+                    <strong>Não vendemos, alugamos ou compartilhamos seus dados</strong>
+                    com terceiros para fins de marketing sem o seu consentimento explícito.
+                </p>
+
+            </div>
+
+
+            <!-- SEÇÃO 4 -->
+
+            <div class="policy-section">
+
+                <h3>
+                    4. Base legal para tratamento
+                </h3>
+
+                <p>
+                    Nos termos do Art. 7º da LGPD, o tratamento dos seus dados
+                    pessoais é realizado com base no seu <strong>consentimento</strong>,
+                    que é coletado no momento do preenchimento do formulário.
+                </p>
+
+                <div class="highlight-box">
+                    <p>
+                        🔒 Você pode retirar seu consentimento a qualquer momento,
+                        entrando em contato conosco pelos canais indicados no
+                        final desta política.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- SEÇÃO 5 -->
+
+            <div class="policy-section">
+
+                <h3>
+                    5. Cookies e tecnologias de rastreamento
+                </h3>
+
+                <p>
+                    Utilizamos cookies para melhorar sua experiência no site.
+                    Cookies são pequenos arquivos de texto armazenados no seu
+                    dispositivo. Os cookies utilizados são:
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Cookies essenciais</strong> – necessários para o
+                        funcionamento básico do site;
+                    </li>
+                    <li>
+                        <strong>Cookies de preferência</strong> – lembram suas
+                        escolhas, como o idioma e a aceitação da política;
+                    </li>
+                    <li>
+                        <strong>Cookies estatísticos</strong> – nos ajudam a
+                        entender como os usuários utilizam o site.
+                    </li>
+                </ul>
+
+                <p>
+                    Você pode desativar os cookies nas configurações do seu
+                    navegador, mas isso pode afetar o funcionamento do site.
+                </p>
+
+            </div>
+
+
+            <!-- SEÇÃO 6 -->
+
+            <div class="policy-section">
+
+                <h3>
+                    6. Compartilhamento de dados
+                </h3>
+
+                <p>
+                    Compartilhamos seus dados apenas com:
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Instrutores parceiros</strong> – na sua região,
+                        para que possam entrar em contato com você;
+                    </li>
+                    <li>
+                        <strong>Prestadores de serviços essenciais</strong> –
+                        como serviços de hospedagem e e-mail;
+                    </li>
+                    <li>
+                        <strong>Autoridades legais</strong> – quando exigido por lei.
+                    </li>
+                </ul>
+
+                <p>
+                    Todos os terceiros que recebem seus dados estão igualmente
+                    obrigados a cumprir as normas da LGPD.
+                </p>
+
+            </div>
+
+
+            <!-- SEÇÃO 7 -->
+
+            <div class="policy-section">
+
+                <h3>
+                    7. Armazenamento e segurança
+                </h3>
+
+                <p>
+                    Adotamos medidas de segurança técnicas e organizacionais
+                    para proteger seus dados pessoais contra:
+                </p>
+
+                <ul>
+                    <li>Acesso não autorizado;</li>
+                    <li>Divulgação indevida;</li>
+                    <li>Perda, alteração ou destruição.</li>
+                </ul>
+
+                <p>
+                    Seus dados serão mantidos apenas pelo tempo necessário
+                    para cumprir as finalidades desta política ou até que
+                    você solicite a exclusão.
+                </p>
+
+            </div>
+
+
+            <!-- SEÇÃO 8 -->
+
+            <div class="policy-section">
+
+                <h3>
+                    8. Seus direitos como titular (LGPD)
+                </h3>
+
+                <p>
+                    De acordo com o Art. 18 da LGPD, você tem o direito de:
+                </p>
+
+                <ul>
+                    <li><strong>Confirmar</strong> a existência de tratamento;</li>
+                    <li><strong>Acessar</strong> seus dados pessoais;</li>
+                    <li><strong>Corrigir</strong> dados incompletos, inexatos ou desatualizados;</li>
+                    <li><strong>Anonimizar, bloquear ou eliminar</strong> dados desnecessários;</li>
+                    <li><strong>Portabilidade</strong> dos dados a outro fornecedor;</li>
+                    <li><strong>Eliminar</strong> seus dados, quando autorizado;</li>
+                    <li><strong>Revogar</strong> o consentimento a qualquer momento.</li>
+                </ul>
+
+                <p>
+                    Para exercer qualquer um desses direitos, entre em contato
+                    conosco pelos canais abaixo.
+                </p>
+
+            </div>
+
+
+            <!-- SEÇÃO 9 -->
+
+            <div class="policy-section">
+
+                <h3>
+                    9. Contato do responsável (DPO)
+                </h3>
+
+                <p>
+                    Caso tenha dúvidas sobre esta Política de Privacidade ou
+                    queira exercer seus direitos, entre em contato:
+                </p>
+
+                <div class="highlight-box">
+                    <p>
+                        📧 <strong>E-mail:</strong> instrutorparticularcontato@gmail.com<br>
+                    </p>
+                </div>
+
+                <p>
+                    Responderemos sua solicitação em até <strong>15 dias úteis</strong>,
+                    conforme previsto na LGPD.
+                </p>
+
+            </div>
+
+
+            <!-- SEÇÃO 10 -->
+
+            <div class="policy-section">
+
+                <h3>
+                    10. Alterações nesta política
+                </h3>
+
+                <p>
+                    Esta Política de Privacidade pode ser atualizada periodicamente
+                    para refletir mudanças legais ou operacionais. A versão mais
+                    recente será sempre publicada nesta página, com a data de
+                    atualização indicada no topo.
+                </p>
+
+                <p>
+                    Recomendamos que você revise esta política regularmente.
+                    O uso contínuo do site após alterações significa que você
+                    concorda com a política atualizada.
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- ================================
+         RODAPÉ
+    ================================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div>
+
+                <strong>
+                    INSTRUTOR PARTICULAR
+                </strong>
+
+                <p>
+                    <a href="index.html">Página Inicial</a> |
+                    <a href="politica-de-privacidade.html">Política de Privacidade</a>
+                </p>
+
+            </div>
+
+
+            <!-- ========================================
+                 ÍCONE TIKTOK
+            ======================================== -->
+
+            <a
+                href="https://www.tiktok.com/@instrutorparticularofc"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                aria-label="Siga-nos no TikTok"
+            >
+
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    width="28"
+                    height="28"
+                    fill="#F0D84E"
+                >
+
+                    <path d="M448 209.9a210.1 210.1 0 0 1-122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/>
+
+                </svg>
+
+            </a>
+
+
+            <p class="copyright">
+                © 2024 Instrutor Particular.
+                Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
