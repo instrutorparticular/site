@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-
-Disallow: /obrigado.html
-
-Sitemap: https://instrutorparticular.com.br/sitemap.xml
