@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site em manutenção - Instrutor Particular. Voltamos em breve!">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Em manutenção | Instrutor Particular</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+
+    <style>
+        /* ========================================
+           RESET
+        ======================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #FFFFFF;
+            color: #000000;
+            line-height: 1.6;
+        }
+
+        /* ========================================
+           CONTAINER
+        ======================================== */
+
+        .container {
+            width: 100%;
+            max-width: 1150px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        /* ========================================
+           HEADER
+        ======================================== */
+
+        .header {
+            background: #F0D84E;
+            padding: 35px 0 45px;
+            text-align: center;
+        }
+
+        .logo-area {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 22px;
+        }
+
+        .logo-circle {
+            width: 200px;
+            height: 200px;
+            background: #FFFFFF;
+            border: 4px solid #000000;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            box-shadow: 5px 5px 0 #000000;
+        }
+
+        .logo-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .brand h1 {
+            font-size: 30px;
+            font-weight: 900;
+            letter-spacing: -1px;
+        }
+
+        .brand h1 span {
+            display: block;
+        }
+
+        .brand p {
+            margin-top: 4px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        /* ========================================
+           CONTEÚDO PRINCIPAL
+        ======================================== */
+
+        .main {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .manutencao-card {
+            background: #FFFFFF;
+            border: 3px solid #000000;
+            border-radius: 20px;
+            padding: 55px 45px;
+            max-width: 620px;
+            margin: auto;
+            box-shadow: 10px 10px 0 #F0D84E;
+        }
+
+        .icone-manutencao {
+            width: 100px;
+            height: 100px;
+            background: #F0D84E;
+            border: 3px solid #000000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 48px;
+            line-height: 1;
+        }
+
+        .manutencao-card h2 {
+            font-size: 38px;
+            letter-spacing: -1.5px;
+            margin-bottom: 15px;
+            line-height: 1.1;
+        }
+
+        .manutencao-card h2 strong {
+            display: inline-block;
+            background: #F0D84E;
+            padding: 0 8px;
+        }
+
+        .manutencao-card .descricao {
+            color: #666666;
+            font-size: 17px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        /* Caixa de aviso */
+        .aviso-box {
+            background: #FFF9C4;
+            border-left: 4px solid #F0D84E;
+            padding: 16px 18px;
+            border-radius: 0 8px 8px 0;
+            margin: 25px 0;
+            font-size: 13px;
+            color: #333;
+            line-height: 1.7;
+            text-align: left;
+        }
+
+        .aviso-box strong {
+            color: #000;
+            display: block;
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+
+        /* Barra de "status" */
+        .status-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 25px;
+            font-size: 13px;
+            font-weight: 700;
+            color: #666;
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            background: #F0D84E;
+            border: 2px solid #000000;
+            border-radius: 50%;
+            animation: pulse-status 1.8s infinite;
+        }
+
+        @keyframes pulse-status {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.15); }
+        }
+
+        /* ========================================
+           RODAPÉ
+        ======================================== */
+
+        .footer {
+            background: #000000;
+            color: #FFFFFF;
+            padding: 35px 0;
+        }
+
+        .footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .footer strong {
+            font-size: 16px;
+        }
+
+        .footer p {
+            color: #BBBBBB;
+            font-size: 12px;
+        }
+
+        .copyright {
+            text-align: right;
+        }
+
+        /* ========================================
+           RESPONSIVO
+        ======================================== */
+
+        @media (max-width: 650px) {
+            .header {
+                padding: 25px 0 35px;
+            }
+
+            .logo-circle {
+                width: 150px;
+                height: 150px;
+            }
+
+            .brand h1 {
+                font-size: 25px;
+            }
+
+            .main {
+                padding: 50px 0;
+            }
+
+            .manutencao-card {
+                padding: 35px 22px;
+                box-shadow: 6px 6px 0 #F0D84E;
+            }
+
+            .icone-manutencao {
+                width: 80px;
+                height: 80px;
+                font-size: 38px;
+            }
+
+            .manutencao-card h2 {
+                font-size: 27px;
+            }
+
+            .manutencao-card .descricao {
+                font-size: 15px;
+            }
+
+            .footer .container {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .copyright {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ========================================
+         TOPO
+    ======================================== -->
+
+    <header class="header">
+        <div class="container">
+            <div class="logo-area">
+                <div class="logo-circle">
+                    <img src="logo.png" alt="Logo Instrutor Particular" width="500" height="500">
+                </div>
+            </div>
+
+            <div class="brand">
+                <h1>INSTRUTOR <span>PARTICULAR</span></h1>
+                <p>Encontre um instrutor na sua região</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================
+         CONTEÚDO PRINCIPAL
+    ======================================== -->
+
+    <main class="main">
+        <div class="container">
+            <div class="manutencao-card">
+
+                <div class="icone-manutencao">🛠️</div>
+
+                <h2>Site em <strong>manutenção.</strong></h2>
+
+                <p class="descricao">
+                    Estamos fazendo algumas melhorias por aqui para deixar sua experiência ainda melhor.
+                    Voltamos em breve!
+                </p>
+
+                <div class="aviso-box">
+                    <strong>⏳ Enquanto isso...</strong>
+                    Nossa equipe está trabalhando para que tudo volte ao ar o mais rápido possível. Agradecemos pela sua paciência e compreensão.
+                </div>
+
+                <div class="status-bar">
+                    <span class="status-dot"></span>
+                    Trabalhando na manutenção
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- ========================================
+         RODAPÉ
+    ======================================== -->
+
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <strong>INSTRUTOR PARTICULAR</strong>
+                <p>Encontre instrutores na sua região.</p>
+            </div>
+
+            <p class="copyright">© 2024 Instrutor Particular. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
