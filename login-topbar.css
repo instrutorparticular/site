@@ -1,0 +1,146 @@
+/* ========================================
+   ÁREA DE ACESSO DO INSTRUTOR (TOPO)
+======================================== */
+
+.topbar-instrutor {
+    background: #000000;
+    color: #FFFFFF;
+    padding: 10px 0;
+    font-size: 13px;
+    border-bottom: 3px solid #F0D84E;
+}
+
+.topbar-instrutor .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.topbar-instrutor .topbar-msg {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #CCCCCC;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.topbar-instrutor .topbar-msg .dot {
+    width: 8px;
+    height: 8px;
+    background: #F0D84E;
+    border-radius: 50%;
+    display: inline-block;
+    animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+
+.topbar-instrutor .topbar-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.topbar-instrutor .topbar-user {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.topbar-instrutor .topbar-user .icon-user {
+    width: 26px;
+    height: 26px;
+    background: #F0D84E;
+    color: #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.topbar-instrutor .btn-topbar {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 2px solid #F0D84E;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.topbar-instrutor .btn-topbar.btn-entrar {
+    background: #F0D84E;
+    color: #000000;
+}
+
+.topbar-instrutor .btn-topbar.btn-entrar:hover {
+    background: #FFFFFF;
+    border-color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+.topbar-instrutor .btn-topbar.btn-painel {
+    background: #F0D84E;
+    color: #000000;
+    display: none;
+}
+
+.topbar-instrutor .btn-topbar.btn-painel:hover {
+    background: #FFFFFF;
+    border-color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+.topbar-instrutor .btn-topbar.btn-sair {
+    background: transparent;
+    color: #F0D84E;
+    display: none;
+}
+
+.topbar-instrutor .btn-topbar.btn-sair:hover {
+    background: #F0D84E;
+    color: #000000;
+}
+
+/* Responsivo */
+@media (max-width: 650px) {
+    .topbar-instrutor {
+        padding: 8px 0;
+    }
+
+    .topbar-instrutor .topbar-msg {
+        display: none;
+    }
+
+    .topbar-instrutor .container {
+        justify-content: center;
+    }
+
+    .topbar-instrutor .topbar-user {
+        font-size: 11px;
+    }
+
+    .topbar-instrutor .btn-topbar {
+        padding: 6px 10px;
+        font-size: 10px;
+    }
+}
